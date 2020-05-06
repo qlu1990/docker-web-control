@@ -1,0 +1,23 @@
+// package compose
+
+// import (
+// 	"fmt"
+// 	"testing"
+// )
+
+// func TestLoadYaml(t *testing.T) {
+// 	conf := LoadYaml("./docker-compose.yml")
+// 	for k, v := range conf {
+// 		if k.(string) == "services" {
+// 			for srv, srvSet := range v.(map[interface{}]interface{}) {
+// 				fmt.Println(srv)
+// 				fmt.Println(srvSet)
+// 			}
+// 		}
+
+// 	}
+// 	services := getServices("test", conf)
+// 	for _, v := range services {
+// 		fmt.Printf("%v", v)
+// 	}
+// }
