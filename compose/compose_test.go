@@ -10,8 +10,8 @@ func TestCompose(t *testing.T) {
 	project := NewProject("test", "./docker-compose.yml")
 	fmt.Println(project.Services)
 	for k, v := range project.Services {
-		fmt.Printf("start %s", k)
-		fmt.Println(v.Up(project.Client))
+		fmt.Printf("start %s\n", k)
+		fmt.Println(v.Up(project.Client, project.DevNull))
 	}
 	// if db, ok := project.Services["db"]; ok {
 	// 	t.Logf("start %s", db.Name)
